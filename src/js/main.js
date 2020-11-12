@@ -12,4 +12,4 @@ function toggleBurger(event){
         burger.classList.remove('active');
         navigation.classList.remove('active');
     }
-}
+};
