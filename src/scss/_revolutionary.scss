@@ -11,7 +11,7 @@
     @include font14-400;
     color: $text-color;
     text-align: center;
-    padding-top: 13px;
+    padding-top: 35px;
     padding-bottom: 80px;
 }
 
@@ -46,7 +46,7 @@
     }
 }
 
-.btn {
+.btn-revol {
     font-family: 'Montserrat', sans-serif;
     color: $color-btn-action;
     background-color: #fafbfc;
@@ -113,7 +113,7 @@
     }
 
     .trial {
-        padding-top: 19px;
+        padding-top: 50px;
         padding-bottom: 93px;
     }
 
@@ -139,6 +139,7 @@
     }
 
     .trial {
+        padding-top: 50px;
         padding-bottom: 66px;
     }
 
