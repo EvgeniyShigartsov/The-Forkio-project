@@ -1,0 +1,21 @@
+.about-section {
+    background: url(../img/about-bg.jpg) top / cover no-repeat;
+    background-position-y: 13px;
+    background-size: auto 863px;
+    background-color: #4b3b4e;
+    height: 1621px;
+}
+.about__wrapper {
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+.about__title {
+    margin: 57px 0 53px 0;
+    text-align: center;
+    color: $white-color;
+    font-size: 36px;
+    font-weight: $font-w700;
+    line-height: 48px;
+}
