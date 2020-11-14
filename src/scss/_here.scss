@@ -11,8 +11,6 @@
     padding-bottom: 35px;
 }
 
-.advantages {}
-
 .advatages-content {
     padding-bottom: 40px;
     text-align: center;
@@ -33,15 +31,10 @@
 }
 
 .here-img {
-    position: relative;
     overflow: hidden;
     float: right;
     width: 100%;
-}
-
-.here-img img {
-    position: relative;
-    left: 0;
+    margin-right: -10px;
 }
 
 .here-icon1,
@@ -49,12 +42,14 @@
 .here-icon3,
 .here-icon4 {
     background-repeat: no-repeat;
+    margin-bottom: 25px;
+    background-position: center;
 }
 
 .here-icon1 {
     background-image: url(../../dist/img/here-icon1.svg);
     min-width: 110px;
-    min-height: auto;
+    min-height: 64px;
     margin-left: 30px;
     margin-right: 23px;
 }
@@ -62,6 +57,7 @@
 .here-icon2 {
     background-image: url(../../dist/img/here-icon2.svg);
     min-width: 90px;
+    min-height: 80px;
     margin-left: 30px;
     margin-right: 43px;
 }
@@ -69,6 +65,7 @@
 .here-icon3 {
     background-image: url(../../dist/img/here-icon3.svg);
     min-width: 60px;
+    min-height: 84px;
     margin-left: 46px;
     margin-right: 58px;
 }
@@ -76,6 +73,7 @@
 .here-icon4 {
     background-image: url(../../dist/img/here-icon4.svg);
     min-width: 70px;
+    min-height: 70px;
     margin-left: 40px;
     margin-right: 50px;
 }
@@ -103,24 +101,18 @@
     }
 
     .item-text {
-
         padding-left: 0;
         padding-right: 0;
     }
 
     .here-img {
         padding-top: 15px;
+        overflow: hidden;
+        padding-left: 58px;
     }
 
     .here-img img {
         float: right;
-        // position: absolute;
-        // left: -350px;
-    }
-
-    .here-img img {
-        // position: relative;
-        // left: 0;
     }
 }
 
@@ -135,11 +127,10 @@
     .grid {
         display: grid;
         grid-template-columns: repeat(1fr, 1fr);
-        grid-template-rows: repeat(9, 46px);
+        grid-template-rows: repeat(9, 52px);
         grid-column-gap: 10px;
         grid-row-gap: 20px;
     }
-
 
     .advantages {
         grid-row-start: 1;
@@ -155,8 +146,12 @@
         grid-column-start: 2;
         grid-column-end: 3;
         @include font48-700;
-        // padding-left: 25px;
+        padding-bottom: 0;
+    }
 
+    .item-text {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .advatages-content {
