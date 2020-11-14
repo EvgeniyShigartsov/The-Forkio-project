@@ -3,19 +3,45 @@
     background-position-y: 13px;
     background-size: auto 863px;
     background-color: #4b3b4e;
-    height: 1621px;
 }
 .about__wrapper {
     @include flex-column;
     justify-content: center;
     align-items: center;
     padding: 0 15px;
+
+    .about__title {
+        margin: 57px 0 53px 0;
+        text-align: center;
+        color: $white-color;
+        font-size: 36px;
+        font-weight: $font-w700;
+        line-height: 48px;
+    }
+    .review__wrapper {
+        @include flex-column;
+        align-items: center;
+        &:not(:last-child){
+            margin-bottom: 41px;
+        }
+
+        .review__logo {
+            max-width: 250px;
+            margin-bottom: 33px;
+        }
+        .review__text {
+            font-family: 'Lato', sans-serif;
+            font-size: $fosi-16;
+            font-weight: $font-w700;
+            font-style: italic;
+            line-height: 24px;
+            color: $white-color;
+            text-align: center;
+
+            &:last-child span {
+                display: block;
+            }
+        }
+    }
 }
-.about__title {
-    margin: 57px 0 53px 0;
-    text-align: center;
-    color: $white-color;
-    font-size: 36px;
-    font-weight: $font-w700;
-    line-height: 48px;
-}
+
