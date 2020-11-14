@@ -3,7 +3,6 @@
         @content;
     }
 }
-
 @mixin for-desktop {
     @media (min-width: 993px) {
         @content;
