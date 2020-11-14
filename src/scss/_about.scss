@@ -9,6 +9,9 @@
     justify-content: center;
     align-items: center;
     padding: 0 15px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+
 
     .about__title {
         margin: 57px 0 53px 0;
@@ -21,27 +24,42 @@
     .review__wrapper {
         @include flex-column;
         align-items: center;
+
         &:not(:last-child){
             margin-bottom: 41px;
         }
 
         .review__logo {
             max-width: 250px;
+        }
+        .review__logo.smashing, .review__logo.pixel {
             margin-bottom: 33px;
         }
+        .review__logo.codrops, .review__logo.bloq {
+            margin-bottom: 29px;
+        }
+        .review__logo.w-logo, .review__logo.tnw {
+            margin-bottom: 23px;
+        }
+
         .review__text {
-            font-family: 'Lato', sans-serif;
-            font-size: $fosi-16;
-            font-weight: $font-w700;
-            font-style: italic;
-            line-height: 24px;
             color: $white-color;
-            text-align: center;
+            font-weight: $font-w700;
+            line-height: 24px;
+            font-size: $fosi-16;
+            font-style: italic;
 
             &:last-child span {
                 display: block;
             }
         }
+    }
+    .about__footer {
+        color: #A291A5;
+        font-weight: 400;
+        font-size: $fosi-14;
+        line-height: 21px;
+        margin-bottom: 24px;
     }
 }
 
