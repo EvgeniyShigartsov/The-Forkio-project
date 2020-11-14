@@ -10,5 +10,12 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
-    @include for-mobile;
+
+    @media (max-width: 480px) {
+        min-width: 320px;
+    }
+}
+
+a {
+    text-decoration: none;
 }

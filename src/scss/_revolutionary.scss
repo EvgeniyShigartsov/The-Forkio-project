@@ -15,7 +15,7 @@
     padding-bottom: 80px;
 }
 
-.section {
+.revol {
     &-title {
         @include font26-700;
         text-transform: uppercase;
@@ -93,7 +93,6 @@
 .social-count {
     position: relative;
     float: left;
-    text-decoration: none;
     padding: 3px 12px;
     @include font12-600;
     color: $color-btn-action;
@@ -117,13 +116,16 @@
         padding-bottom: 93px;
     }
 
-    .section-title {
-        @include font42-700;
-    }
+    .revol {
 
-    .section-text {
-        @include font21-400;
-        padding: 33px 30px 45px;
+        &-title {
+            @include font42-700;
+        }
+
+        &-text {
+            @include font21-400;
+            padding: 33px 30px 45px;
+        }
     }
 
     .pagehead-actions {
@@ -143,15 +145,18 @@
         padding-bottom: 66px;
     }
 
-    .section-title {
-        @include font54-700
-    }
+    .revol {
 
-    .section-text {
-        @include font21-400;
-        width: 861px;
-        margin: 0 auto;
-        padding-top: 35px;
-        padding-bottom: 25px;
+        &-title {
+            @include font54-700
+        }
+
+        &-text {
+            @include font21-400;
+            width: 861px;
+            margin: 0 auto;
+            padding-top: 35px;
+            padding-bottom: 25px;
+        }
     }
 }
