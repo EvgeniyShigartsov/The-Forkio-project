@@ -1,0 +1,65 @@
+.section-what-you-get {
+    background-color: #F4F4F4;
+    padding-top: 94px;
+    padding-bottom: 33px;
+}
+
+.advantages {
+    padding: 4px 10px 0 0;
+}
+
+.advatages-content {
+    padding-bottom: 34px;
+}
+
+.item-heading {
+    color: #323232;
+    @include font16-400;
+    padding-bottom: 16px;
+}
+
+.item-text {
+    @include font14-400;
+    color: $text-color;
+}
+
+.here-icon1,
+.here-icon2,
+.here-icon3,
+.here-icon4 {
+    background-repeat: no-repeat;
+}
+
+.here-icon1 {
+    background-image: url(../../dist/img/here-icon1.svg);
+    min-width: 110px;
+    margin-left: 30px;
+    margin-right: 23px;
+}
+
+.here-icon2 {
+    background-image: url(../../dist/img/here-icon2.svg);
+    min-width: 90px;
+    margin-left: 30px;
+    margin-right: 43px;
+}
+
+.here-icon3 {
+    background-image: url(../../dist/img/here-icon3.svg);
+    min-width: 60px;
+    margin-left: 46px;
+    margin-right: 58px;
+}
+
+.here-icon4 {
+    background-image: url(../../dist/img/here-icon4.svg);
+    min-width: 70px;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+.what-heading {
+    @include font48-700;
+    color: #8D81AC;
+    padding-left: 25px;
+}
