@@ -1,3 +1,7 @@
+.fw400 {
+    font-weight: 400;
+}
+
 .fork {
     &-section {
         background-color: #4a3b4e;
@@ -74,7 +78,7 @@
     }
 
     &--selected {
-        background: rgba(70, 48, 72, 1);
+        background: rgba(70, 48, 72, 0.84);
         align-items: center;
         width: 300px;
         height: 560px;
