@@ -1,127 +1,151 @@
-.section-what-you-get {
-    background-color: rgba(0, 0, 0, 0.0001);
-    padding-top: 32px;
-    padding-bottom: 6px;
+.here {
+
+    &-section {
+        background-color: rgba(0, 0, 0, 0.0001);
+        padding-top: 32px;
+        padding-bottom: 6px;
+    }
+
+    &-heading {
+        @include font32-700;
+        color: #8D81AC;
+        text-align: center;
+        padding-bottom: 35px;
+    }
+
+    &-img {
+        overflow: hidden;
+        float: right;
+        width: 100%;
+        margin-right: -10px;
+    }
+
+    &-icon1,
+    &-icon2,
+    &-icon3,
+    &-icon4 {
+        background-repeat: no-repeat;
+        margin-bottom: 25px;
+        background-position: center;
+    }
+
+    &-icon1 {
+        background-image: url(../../dist/img/here-icon1.svg);
+        min-width: 110px;
+        min-height: 64px;
+        margin-left: 30px;
+        margin-right: 23px;
+    }
+
+    &-icon2 {
+        background-image: url(../../dist/img/here-icon2.svg);
+        min-width: 90px;
+        min-height: 80px;
+        margin-left: 30px;
+        margin-right: 43px;
+    }
+
+    &-icon3 {
+        background-image: url(../../dist/img/here-icon3.svg);
+        min-width: 60px;
+        min-height: 84px;
+        margin-left: 46px;
+        margin-right: 58px;
+    }
+
+    &-icon4 {
+        background-image: url(../../dist/img/here-icon4.svg);
+        min-width: 70px;
+        min-height: 70px;
+        margin-left: 40px;
+        margin-right: 50px;
+    }
 }
 
-.what-heading {
-    @include font32-700;
-    color: #8D81AC;
-    text-align: center;
-    padding-bottom: 35px;
-}
+.advantage {
+    &-content {
+        padding-bottom: 40px;
+        text-align: center;
+    }
 
-.advatages-content {
-    padding-bottom: 40px;
-    text-align: center;
-}
-
-.item-heading {
-    color: #323232;
-    @include font16-400;
-    padding-bottom: 15px;
-}
+    &-heading {
+        color: #323232;
+        @include font16-400;
+        padding-bottom: 15px;
+    }
 
 
-.item-text {
-    @include font14-400;
-    color: $text-color;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.here-img {
-    overflow: hidden;
-    float: right;
-    width: 100%;
-    margin-right: -10px;
-}
-
-.here-icon1,
-.here-icon2,
-.here-icon3,
-.here-icon4 {
-    background-repeat: no-repeat;
-    margin-bottom: 25px;
-    background-position: center;
-}
-
-.here-icon1 {
-    background-image: url(../../dist/img/here-icon1.svg);
-    min-width: 110px;
-    min-height: 64px;
-    margin-left: 30px;
-    margin-right: 23px;
-}
-
-.here-icon2 {
-    background-image: url(../../dist/img/here-icon2.svg);
-    min-width: 90px;
-    min-height: 80px;
-    margin-left: 30px;
-    margin-right: 43px;
-}
-
-.here-icon3 {
-    background-image: url(../../dist/img/here-icon3.svg);
-    min-width: 60px;
-    min-height: 84px;
-    margin-left: 46px;
-    margin-right: 58px;
-}
-
-.here-icon4 {
-    background-image: url(../../dist/img/here-icon4.svg);
-    min-width: 70px;
-    min-height: 70px;
-    margin-left: 40px;
-    margin-right: 50px;
+    &-text {
+        @include font14-400;
+        color: $text-color;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 @include for-tablet {
 
-    .section-what-you-get {
-        padding-top: 60px;
-        padding-bottom: 0;
+    .here {
+        &-section {
+            padding-top: 60px;
+            padding-bottom: 0;
+        }
+
+        &-heading {
+            @include font42-700;
+            padding-bottom: 50px;
+        }
+
+        &-img {
+            padding-top: 15px;
+            overflow: hidden;
+            padding-left: 58px;
+        }
+
+        &-img img {
+            float: right;
+        }
     }
 
-    .what-heading {
-        @include font42-700;
-        padding-bottom: 50px;
-    }
+    .advantage {
 
-    .advantages-block {
         display: flex;
+
+        &-content {
+            padding-bottom: 60px;
+            text-align: left;
+            padding-right: 15px;
+        }
+
+        &-text {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 
-    .advatages-content {
-        padding-bottom: 60px;
-        text-align: left;
-        padding-right: 15px;
-    }
-
-    .item-text {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .here-img {
-        padding-top: 15px;
-        overflow: hidden;
-        padding-left: 58px;
-    }
-
-    .here-img img {
-        float: right;
-    }
 }
 
 @include for-desktop {
 
-    .section-what-you-get {
-        background-color: #F4F4F4;
-        padding-top: 94px;
-        padding-bottom: 45px;
+    .here {
+        &-section {
+            background-color: #F4F4F4;
+            padding-top: 94px;
+            padding-bottom: 45px;
+        }
+
+        &-heading {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            @include font48-700;
+            padding-bottom: 0;
+        }
+
+        &-img {
+            overflow: visible;
+        }
     }
 
     .grid {
@@ -132,7 +156,7 @@
         grid-row-gap: 20px;
     }
 
-    .advantages {
+    .advantages-block {
         grid-row-start: 1;
         grid-row-end: 9;
         grid-column-start: 1;
@@ -140,30 +164,18 @@
         padding-top: 4px;
     }
 
-    .what-heading {
-        grid-row-start: 1;
-        grid-row-end: 2;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        @include font48-700;
-        padding-bottom: 0;
-    }
-
-    .item-text {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .advatages-content {
-        padding-bottom: 34px;
-        text-align: left;
-    }
-
-    .advantages-block {
+    .advantage {
         display: flex;
+
+        &-content {
+            padding-bottom: 34px;
+            text-align: left;
+        }
+
+        &-text {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 
-    .here-img {
-        overflow: visible;
-    }
 }
