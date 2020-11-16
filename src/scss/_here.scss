@@ -18,6 +18,8 @@
         float: right;
         width: 100%;
         margin-right: -10px;
+        position: relative;
+        right: -10px;
     }
 
     &-icon1,
@@ -81,6 +83,10 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+}
+
+.clearfix {
+    clear: both;
 }
 
 @include for-tablet {
@@ -150,7 +156,7 @@
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(1fr, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
         grid-template-rows: repeat(9, 52px);
         grid-column-gap: 10px;
         grid-row-gap: 20px;
