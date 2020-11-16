@@ -15,7 +15,7 @@
     .about__title {
         margin: 57px 0 53px 0;
         text-align: center;
-        color: $white-color;
+        color: $text-color--light;
         font-size: 36px;
         font-weight: 700;
         line-height: 48px;
@@ -42,10 +42,10 @@
             }
     
             .review__text {
-                color: $white-color;
+                color: $text-color--light;
                 font-weight: 700;
                 line-height: 24px;
-                font-size: $fosi-16;
+                font-size: $font-size--regular;
                 font-style: italic;
     
                 &:last-child span {
@@ -57,7 +57,7 @@
     .about__footer {
         margin: 37px 0 22px 0;
         color: #A291A5;
-        font-size: $fosi-14;
+        font-size: $font-size--small;
         line-height: 21px;
     }
 
