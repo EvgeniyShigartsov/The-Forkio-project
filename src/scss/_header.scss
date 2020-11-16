@@ -13,7 +13,7 @@ a {
 }
 .btn {
     color: $white-color;
-    font-weight: $font-w700;
+    font-weight: 700;
     border: none;
     border-radius: 40px;
     background-color: $prim-color;
@@ -43,7 +43,7 @@ a {
         text-transform: uppercase;
         color: $prim-color;
         font-family: 'lato', sans-serif;
-        font-weight: $font-w700;
+        font-weight: 700;
         font-size: 24px;
     }
     .btn__buy-now{
@@ -138,7 +138,7 @@ a {
     .title {
         color: $white-color;
         font-size: 48px;
-        font-weight: $font-w700;
+        font-weight: 700;
         line-height: 48px;
     }
     .title__text {
@@ -200,7 +200,7 @@ a {
                 width: fit-content;
                 border: none;
                 font-size: $fosi-16;
-                font-weight: $font-w700;
+                font-weight: 700;
                 color: $prim-color;
 
                 & :not(:last-child, :nth-child(4)){
@@ -287,7 +287,7 @@ a {
                 padding: 0;
                 width: fit-content;
                 font-size: $fosi-16;
-                font-weight: $font-w700;
+                font-weight: 700;
                 color: $prim-color;
                 border: none;
 

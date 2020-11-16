@@ -2,7 +2,7 @@
   "name": "the-forkio-project",
   "version": "1.0.0",
   "description": "Step Project",
-  "main": "gulpfile.js",
+  "main": "example.js",
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build"
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/evgeniy-shigartsov/The-Forkio-project.git"
   },
   "keywords": [
-    "Forkio"
+    "The Forkio app"
   ],
   "author": "Evgeniy Shigartsov, Olha Titova",
   "license": "ISC",
