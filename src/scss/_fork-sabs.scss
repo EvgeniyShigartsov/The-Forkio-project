@@ -19,6 +19,7 @@
 
 .price-card {
     width: 257px;
+    // width: 100%;
     text-align: center;
     background: rgba(255, 255, 255, .11);
     margin: 0 auto;
@@ -139,6 +140,11 @@
 
     .price-card {
         margin: 0;
+        // width: calc(100% / 2);
+    }
+
+    .price-card__wraper:nth-child(2n) {
+        clear: left;
     }
 }
 
@@ -166,4 +172,5 @@
         justify-content: center;
         align-items: center;
     }
+
 }
