@@ -99,6 +99,7 @@
 
         &-heading {
             @include font42-700;
+
             padding-bottom: 50px;
         }
 
@@ -145,26 +146,33 @@
             grid-row-end: 2;
             grid-column-start: 2;
             grid-column-end: 3;
-            @include font48-700;
+            font-size: calc(42px + (48 - 42) * (100vw - 992px) / (1200 - 992));
             padding-bottom: 0;
         }
 
         &-img {
             overflow: visible;
+            width: 100%;
+        }
+
+        &-img img {
+            max-width: 700px;
+            width: 100%;
+            height: auto;
         }
     }
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-        grid-template-rows: repeat(9, 52px);
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(8, 52px);
         grid-column-gap: 10px;
         grid-row-gap: 20px;
     }
 
     .advantages-block {
         grid-row-start: 1;
-        grid-row-end: 9;
+        grid-row-end: 8;
         grid-column-start: 1;
         grid-column-end: 2;
         padding-top: 4px;
@@ -183,5 +191,4 @@
             padding-right: 0;
         }
     }
-
 }
