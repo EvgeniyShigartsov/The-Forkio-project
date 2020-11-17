@@ -15,9 +15,9 @@
     .about__title {
         margin: 57px 0 53px 0;
         text-align: center;
-        color: $white-color;
+        color: $text-color--light;
         font-size: 36px;
-        font-weight: $font-w700;
+        font-weight: 700;
         line-height: 48px;
     }
     .reviews__wrapper {
@@ -42,10 +42,10 @@
             }
     
             .review__text {
-                color: $white-color;
-                font-weight: $font-w700;
+                color: $text-color--light;
+                font-weight: 700;
                 line-height: 24px;
-                font-size: $fosi-16;
+                font-size: $font-size--regular;
                 font-style: italic;
     
                 &:last-child span {
@@ -57,8 +57,7 @@
     .about__footer {
         margin: 37px 0 22px 0;
         color: #A291A5;
-        font-weight: 400;
-        font-size: $fosi-14;
+        font-size: $font-size--small;
         line-height: 21px;
     }
 
@@ -110,6 +109,12 @@
 }
 
 @include for-desktop {
+    .about-section {
+        background-size: cover;
+        @media (min-width: 1600px) {
+            background-position: bottom;
+        }
+    }
     .about__wrapper {
         padding: 0;
         

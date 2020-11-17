@@ -12,8 +12,8 @@ a {
     padding: 33px 5px;
 }
 .btn {
-    color: $white-color;
-    font-weight: $font-w700;
+    color: $text-color--light;
+    font-weight: 700;
     border: none;
     border-radius: 40px;
     background-color: $prim-color;
@@ -26,7 +26,7 @@ a {
     transform: translateX(-50%) translateY(50%);
     width: 290px;
     height: 45px;
-    font-size: $fosi-18;
+    font-size: $font-size--regular__plus;
 }
 .head-wrapper {
     @include flex-center-between;
@@ -43,7 +43,7 @@ a {
         text-transform: uppercase;
         color: $prim-color;
         font-family: 'lato', sans-serif;
-        font-weight: $font-w700;
+        font-weight: 700;
         font-size: 24px;
     }
     .btn__buy-now{
@@ -61,7 +61,7 @@ a {
             position: absolute;
             width: 100%;
             height: 2px;
-            background-color: $white-color;
+            background-color: $text-color--light;
             border-radius: 5px;
             transition: all .2s linear;
         }
@@ -104,8 +104,8 @@ a {
         .nav__item {
             width: 100%;
             padding: 35px 0 26px 35px;
-            color: $white-color;
-            font-size: $fosi-26;
+            color: $text-color--light;
+            font-size: $font-size--bigger__plus;
             line-height: 26px;
             border-bottom: 3px solid #3B3B3B;
             position: relative;
@@ -136,22 +136,22 @@ a {
     margin: 50px 0 0 0;
 
     .title {
-        color: $white-color;
+        color: $text-color--light;
         font-size: 48px;
-        font-weight: $font-w700;
+        font-weight: 700;
         line-height: 48px;
     }
     .title__text {
         margin: 19px 0 14px 0;
         color: $prim-color;
-        font-size: $fosi-18;
+        font-size: $font-size--regular__plus;
         line-height: 24px;
         text-align: center;
     }
     .title__link {
         text-transform: uppercase;
-        font-size: $fosi-14;
-        color: $text-color;
+        font-size: $font-size--small;
+        color: $text-color--dark;
     }
 }
 
@@ -162,7 +162,7 @@ a {
     .btn__download {
         width: 390px;
         height: 62px;
-        font-size: $fosi-21;
+        font-size: $font-size--bigger;
     }
     .head {
         padding: 24px 5px 56px 5px;
@@ -182,7 +182,7 @@ a {
         }
         .btn__buy-now{
             width: 145px;
-            font-size: $fosi-16;
+            font-size: $font-size--regular;
         }
         .navigation {
             transform: scale(1) translateX(-50%);
@@ -199,8 +199,8 @@ a {
                 padding: 0;
                 width: fit-content;
                 border: none;
-                font-size: $fosi-16;
-                font-weight: $font-w700;
+                font-size: $font-size--regular;
+                font-weight: 700;
                 color: $prim-color;
 
                 & :not(:last-child, :nth-child(4)){
@@ -235,13 +235,13 @@ a {
     }
     .btn:hover {
         border: 1px solid $prim-color;
-        background-color: $white-color;
+        background-color: $text-color--light;
         color: $prim-color;
     }
     .btn__download {
         width: 390px;
         height: 62px;
-        font-size: $fosi-21;
+        font-size: $font-size--bigger;
         &:hover {
             border: 2px solid $prim-color;
         }
@@ -263,7 +263,7 @@ a {
                 margin-left: 17px;
 
                 &:hover {
-                    color: $white-color;
+                    color: $text-color--light;
                 }
             }
             .logo__img:hover {
@@ -272,7 +272,7 @@ a {
         }
         .btn__buy-now {
             width: 145px;
-            font-size: $fosi-16;
+            font-size: $font-size--regular;
         }
         .navigation {
             flex-direction: row;
@@ -286,8 +286,8 @@ a {
             .nav__item {
                 padding: 0;
                 width: fit-content;
-                font-size: $fosi-16;
-                font-weight: $font-w700;
+                font-size: $font-size--regular;
+                font-weight: 700;
                 color: $prim-color;
                 border: none;
 
@@ -298,7 +298,7 @@ a {
                     margin-right: 46px;
                 }
                 &:hover {
-                    color: $white-color;
+                    color: $text-color--light;
                 }
             }
         }
@@ -318,7 +318,7 @@ a {
             }
         }
         .title__link {
-            font-size: $fosi-16;
+            font-size: $font-size--regular;
         }
     }
 }

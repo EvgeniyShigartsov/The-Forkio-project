@@ -11,7 +11,11 @@ const imagemin = require('gulp-imagemin')
 const browserSync = require('browser-sync').create()
 
 const cleanDist = () => {
-    return gulp.src('dist', {read: false}).pipe(clean())
+    return gulp.src('dist', {
+        read: false,
+        allowEmpty: true
+    })
+    .pipe(clean())
 }
 
 const scssBuild = () => {
