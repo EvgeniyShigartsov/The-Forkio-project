@@ -2,7 +2,7 @@
   "name": "the-forkio-project",
   "version": "1.0.0",
   "description": "Step Project",
-  "main": "example.js",
+  "main": "",
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build"
