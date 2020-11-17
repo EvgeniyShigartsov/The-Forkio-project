@@ -1,3 +1,26 @@
+@mixin for-tablet {
+    @media (min-width: 481px) and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin for-desktop {
+    @media (min-width: 993px) {
+        @content;
+    }
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 @mixin font12-600 {
     font-size: 12px;
     font-weight: 600;

@@ -2,12 +2,12 @@
     display: flex;
 }
 
-.section-revolutionary {
+.revolutionary-section {
     background-color: $text-color--light;
     padding-bottom: 68px;
 }
 
-.trial {
+.period {
     @include font14-400;
     color: $text-color--dark;
     text-align: center;
@@ -63,7 +63,7 @@
     border: 1px solid $color-btn-action-border;
     border-radius: 6px;
 
-    .octicon {
+    &-icon {
         margin-right: 4px;
         color: #6a737d;
         vertical-align: text-bottom;
@@ -107,11 +107,11 @@
 
 @include for-tablet {
 
-    .section-revolutionary {
+    .revolutionary-section {
         padding-bottom: 78px;
     }
 
-    .trial {
+    .period {
         padding-top: 50px;
         padding-bottom: 93px;
     }
@@ -136,11 +136,11 @@
 
 @include for-desktop {
 
-    .section-revolutionary {
+    .revolutionary-section {
         padding-bottom: 50px;
     }
 
-    .trial {
+    .period {
         padding-top: 50px;
         padding-bottom: 66px;
     }
