@@ -3,13 +3,13 @@
 }
 
 .section-revolutionary {
-    background-color: $white-color;
+    background-color: $text-color--light;
     padding-bottom: 68px;
 }
 
 .trial {
     @include font14-400;
-    color: $text-color;
+    color: $text-color--dark;
     text-align: center;
     padding-top: 35px;
     padding-bottom: 80px;
@@ -97,7 +97,7 @@
     @include font12-600;
     color: $color-btn-action;
     vertical-align: middle;
-    background-color: $white-color;
+    background-color: $text-color--light;
     border: 1px solid $color-btn-action-border;
     border-left: 0;
     border-top-right-radius: 6px;

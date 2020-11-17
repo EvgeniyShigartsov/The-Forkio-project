@@ -5,7 +5,7 @@
 .fork {
     &-section {
         background-color: #4a3b4e;
-        color: $white-color;
+        color: $text-color--light;
         padding-bottom: 1px;
     }
 
@@ -18,8 +18,7 @@
 }
 
 .price-card {
-    width: 257px;
-    // width: 100%;
+    width: 85%;
     text-align: center;
     background: rgba(255, 255, 255, .11);
     margin: 0 auto;
@@ -54,13 +53,15 @@
             background-color: $prim-color;
             position: absolute;
             top: 52px;
-            left: 100px;
+            margin: 0 auto;
+            right: 0;
+            left: 0;
         }
     }
 
     &__bonus {
         @include font16-400;
-        padding: 80px 23px 0;
+        padding: 80px 8.7% 0;
 
         &--pad {
             padding-bottom: 18px;
@@ -69,7 +70,7 @@
 
     &__purchase {
         @include font15-400;
-        color: $white-color;
+        color: $text-color--light;
         padding: 15px 38px;
         border-radius: 25px;
         background: rgba(255, 255, 255, .15);
@@ -81,7 +82,7 @@
     &--selected {
         background: rgba(70, 48, 72, 0.84);
         align-items: center;
-        width: 300px;
+        width: 100%;
         height: 560px;
 
         &>.price-card__heading {
@@ -96,12 +97,11 @@
 
         &>.price-card__time::after {
             content: '';
-            left: 120px;
             top: 62px;
         }
 
         &>.price-card__bonus {
-            padding: 90px 50px 36px;
+            padding: 90px 60px 36px;
         }
 
         &>.price-card__purchase {
@@ -129,24 +129,44 @@
         }
     }
 
-    .price-card__wraper {
+    .prise-card__wraper-column {
         display: flex;
-        row-gap: 30px;
+        width: 70%;
         column-gap: 25px;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .prise-card__wraper-column--selected {
+        width: 80%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        column-gap: 25px;
+        // margin-left: auto;
+        // margin-right: auto;
+
+        .price-card {
+            width: 44%;
+        }
+
+        .price-card--selected {
+            width: 56%;
+        }
     }
 
     .price-card {
         margin: 0;
-        // width: calc(100% / 2);
-    }
 
-    .price-card__wraper:nth-child(2n) {
-        clear: left;
+        &--selected {
+            width: 85%;
+        }
     }
 }
+
 
 @include for-desktop {
 
@@ -173,4 +193,19 @@
         align-items: center;
     }
 
+    .prise-card__wraper-column {
+        width: 46%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .prise-card__wraper-column--selected {
+        width: 54%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
 }

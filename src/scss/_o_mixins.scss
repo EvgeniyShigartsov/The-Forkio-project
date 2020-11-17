@@ -55,15 +55,21 @@
     line-height: 44px;
 }
 
-@mixin font54-700 {
-    font-size: 54px;
+@mixin font46-700 {
+    font-size: 46px;
     font-weight: 700;
+    // line-height: 46px;
 }
 
 @mixin font48-700 {
     font-size: 48px;
     font-weight: 700;
-    line-height: 50px;
+    // line-height: 50px;
+}
+
+@mixin font54-700 {
+    font-size: 54px;
+    font-weight: 700;
 }
 
 @mixin font60-700 {
