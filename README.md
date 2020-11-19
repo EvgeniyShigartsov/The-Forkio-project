@@ -1,5 +1,7 @@
 # The-Forkio-project
 
+**DEMO:** https://evgeniyshigartsov.github.io/The-Forkio-project/
+
 1. Список использованных технологий:
 
     - сборщик проекта Gulp;
