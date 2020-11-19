@@ -1,12 +1,8 @@
-.fw400 {
-    font-weight: 400;
-}
-
 .fork {
     &-section {
         background-color: #4a3b4e;
         color: $text-color--light;
-        padding-bottom: 1px;
+        padding-bottom: 15px;
     }
 
     &-heading {
@@ -17,12 +13,22 @@
     }
 }
 
+.price-card__wraper,
+.price-card__wraper--cheap,
+.price-card__wraper--expensive {
+
+    width: 100%;
+    @include flex-column;
+    align-items: center;
+    gap: 18px;
+}
+
 .price-card {
-    width: 85%;
+
+    width: 257px;
     text-align: center;
     background: rgba(255, 255, 255, .11);
-    margin: 0 auto;
-    margin-bottom: 18px;
+
 
     &__heading,
     &__time,
@@ -40,6 +46,10 @@
         @include font60-700;
         padding-top: 30px;
         padding-bottom: 20px;
+
+        span {
+            font-weight: 400;
+        }
     }
 
     &__time {
@@ -53,9 +63,8 @@
             background-color: $prim-color;
             position: absolute;
             top: 52px;
-            margin: 0 auto;
-            right: 0;
-            left: 0;
+            right: 50%;
+            transform: translateX(50%);
         }
     }
 
@@ -86,7 +95,7 @@
     &--selected {
         background: rgba(70, 48, 72, 0.84);
         align-items: center;
-        width: 100%;
+        width: 299px;
         height: 560px;
 
         &>.price-card__heading {
@@ -138,44 +147,37 @@
         }
     }
 
-    .price-card__wraper-column {
-        width: 70%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        column-gap: 25px;
-        margin-bottom: 30px;
-        margin-left: auto;
-        margin-right: auto;
+    .price-card__wraper {
 
+        row-gap: 30px;
 
-        .price-card {
+        &--cheap,
+        &--expensive {
+            @include flex-row--center;
+            column-gap: 25px;
 
-            &__purchase {
-                margin-left: 15px;
-                margin-right: 15px;
-            }
+        }
+
+        &--expensive {
+            margin-right: 46px;
         }
     }
+}
 
-    .price-card__wraper-column--selected {
-        width: 80%;
-        display: flex;
-        align-items: center;
-        column-gap: 25px;
-        margin-left: auto;
-        margin-right: auto;
+@media (min-width: 481px) and (max-width: 640px) {
 
-        .price-card {
-            margin-bottom: 0;
-            width: 46%;
-            margin-right: 6%;
-        }
+    .price-card__wraper--expensive {
 
-        .price-card--selected {
-            width: 54%;
-            margin-right: 0;
-            margin-bottom: 0;
+        margin-right: 1%;
+    }
+
+    .price-card {
+        width: inherit;
+        min-width: 210px;
+
+        &--selected {
+            width: inherit;
+            min-width: 225px;
         }
     }
 }
@@ -189,7 +191,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            padding-bottom: 60px;
+            padding-bottom: 95px;
         }
 
         &-heading {
@@ -200,25 +202,30 @@
     }
 
     .price-card__wraper {
-        display: flex;
+        @include flex-row--center;
+        width: 90%;
+        margin: 0 auto;
         gap: 15px;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .price-card__wraper-column {
-        width: 46%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
+        &--cheap,
+        &--expensive {
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+        }
     }
+}
 
-    .price-card__wraper-column--selected {
-        width: 54%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
+@media (min-width: 993px) and (max-width: 1179px) {
+
+    .price-card {
+        width: 100%;
+        min-width: 210px;
+
+        &--selected {
+            width: 100%;
+            min-width: 252px;
+        }
     }
 }
