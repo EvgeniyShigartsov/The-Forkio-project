@@ -70,6 +70,9 @@
 }
 
 @include for-tablet {
+    .about-section {
+        background-position-y: 0;
+    }
     .about__wrapper {
         padding: 0;
 
@@ -111,6 +114,7 @@
 @include for-desktop {
     .about-section {
         background-size: cover;
+        background-position-y: 0;
         @media (min-width: 1600px) {
             background-position: bottom;
         }
