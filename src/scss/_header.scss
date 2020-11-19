@@ -1,6 +1,3 @@
-a {
-    text-decoration: none;
-}
 .header-section {
     min-height: 90vh;
     background: url(../img/header-bg.jpg) center / cover  no-repeat;
@@ -9,7 +6,7 @@ a {
 }
 .head {
     background-color: #27262A;
-    padding: 33px 5px;
+    padding: 33px 0;
 }
 .btn {
     color: $text-color--light;
